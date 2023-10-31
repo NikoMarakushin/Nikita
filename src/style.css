@@ -1,0 +1,43 @@
+.memory-game {
+    width: 820px;
+    height: 440px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 210px 210px;
+    background: #0fadad;
+    gap: 20px;
+    padding: 20px;
+}
+
+.memory-card {
+    position: relative;
+}
+
+.flip .front-face {
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition: 0.5s 0.5s;
+}
+
+.flip .back-face {
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: 0.5s;
+}
+
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition: 0.5s 0.5s;
+}
+
+.front-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition: 0.5s;
+}
